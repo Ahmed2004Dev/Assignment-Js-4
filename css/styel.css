@@ -1,0 +1,26 @@
+.cont-all{
+    background-color: #24353F;
+    height:100vh;
+}
+.cont-card{
+    background-color: #24353F;
+}
+
+::placeholder{
+    color:#ADB6B6 !important;
+}
+input{
+    color:White !important
+}
+
+a:hover{
+    text-decoration:underline !important;
+}
+
+.alert-message{
+    color:red !important
+}
+
+.cont-body-welcom{
+    height:5000px
+}

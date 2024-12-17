@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css files -->
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/styel.css">
+    <title>Assignmnet Js-4</title>
+</head>
+
+<body>
+
+        <div class="cont-all w-100 d-block">
+            <div class="container pt-5">
+                <div class="cont-card shadow-lg w-50 m-auto mt-5 p-5 text-center mb-4">
+                    <h1 class="text-capitalize text-info mb-4">smart login system</h1>
+                    <div class="cont-input-sign">
+                        <input id="yourname" class="bg-transparent form-control mb-4 d-none" placeholder="Enter Your Name"
+                            type="text">
+                        <p id="message_name" class="text-danger d-none">Enter three letter at least</p>
+                        <input class="emailuser bg-transparent form-control mb-4" type="email"
+                            placeholder="Enter Your Email">
+                        <p id="message_email" class="text-danger d-none">Enter valid email</p>
+                        <input class="passworduser bg-transparent form-control mb-4" type="password"
+                            placeholder="Enter password">
+                        <p id="message_password" class="text-danger d-none">must password contain on number and letter</p>
+                    </div>
+    
+                    <button id="sign-btnn" onclick="signer()"
+                        class="sign-btn btn btn-outline-info mb-4 w-100 text-white d-block" type="button">
+                        sign
+                    </button>
+                    <button id="login-btnn" onclick="loginer()" class="sign-btn btn btn-info mb-4 w-100 text-white d-none"
+                        type="button">
+                        Login
+                    </button>
+    
+                    
+                    <p id="message_email_founded" class="text-danger "></p>
+    
+                    <button class="btn btn-outline-info mb-4 w-100 d-none" type="button">Sign Up</button>
+                    <div class="qoestion-sign text-white">
+                        <span>Don’t have an account?</span>
+                        <a onclick="loginButtn()" id="sign_up_buttn" class="text-white text-decoration-none" href="#">SignUp</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <table class="table table-striped text-center w-50 m-auto  text-center d-none"> 
+            <caption class="caption-top text-center text-success fw-bold fs-1 my-5">WELCOME USER</caption>
+            <thead>
+                <tr class="text-info">
+                    <th class="text-primary fs-3">Index</th>
+                    <th class="text-primary fs-3">Name</th>
+                    <th class="text-primary fs-3">Account</th>
+                    <th class="text-primary fs-3">Password</th>
+                    <th class="text-primary fs-3">Sign out</th>
+                </tr>
+            <tbody id="tbody"></tbody>
+            </thead>
+        </table>
+
+    <!-- js files -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/jsfile.js"></script>
+
+</body>
+
+</html>
